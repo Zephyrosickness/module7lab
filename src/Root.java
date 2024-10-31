@@ -33,11 +33,9 @@ public class Root {
 
         do{
             System.out.println(message);
-            if(scan.hasNextInt()){
-                input = scan.nextInt();
-                if(input>=minBound&&input<=maxBound){
-                    check = true;
-                }
+            if(scan.hasNextInt()){input = scan.nextInt();
+
+                if(input>=minBound&&input<=maxBound){check = true;}
             }
         }while(!check);
         return input;
